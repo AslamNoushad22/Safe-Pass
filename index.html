@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Password Strength Checker | Aslam Noushad</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <h1>Password Strength Checker</h1>
+    <p class="subtitle">A clean and professional password evaluator with real-time analysis.</p>
+
+    <div class="input-group">
+      <label for="password">Enter Password</label>
+      <div class="input-field">
+        <input type="password" id="password" placeholder="Type here..." autocomplete="off" />
+        <button id="togglePassword">Show</button>
+      </div>
+    </div>
+
+    <div class="strength-meter">
+      <div id="strengthBar"></div>
+    </div>
+    <p id="strengthLabel" class="strength-label">Strength: -</p>
+
+    <div class="rules">
+      <p><span id="rule-length" class="dot"></span> Minimum 6 characters</p>
+      <p><span id="rule-upper" class="dot"></span> At least one uppercase letter</p>
+      <p><span id="rule-number" class="dot"></span> At least one number</p>
+      <p><span id="rule-symbol" class="dot"></span> At least one special character</p>
+    </div>
+
+    <div class="buttons">
+      <button id="clearBtn" class="secondary">Clear</button>
+      <button id="copyBtn" class="primary">Copy</button>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Aslam Noushad — All Rights Reserved  
+    | <a href="http://aslamsportfolio.netlify.app/" target="_blank">Portfolio</a>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
